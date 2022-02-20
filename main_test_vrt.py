@@ -205,7 +205,7 @@ def prepare_model_dataset(args):
         args.nonblind_denoising = True
 
     # download model
-    model_path = f'model_zoo/vrt/{args.task}.pth'
+    model_path = f'/model/model_zoo/vrt/{args.task}.pth'
     if os.path.exists(model_path):
         print(f'loading model from ./model_zoo/vrt/{model_path}')
     else:
