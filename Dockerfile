@@ -18,3 +18,5 @@ RUN apt-get clean
 
 RUN pip install addict future numpy opencv-python Pillow pyyaml requests scikit-image scipy torch>=1.9 torchvision timm einops
 RUN pip install matplotlib
+
+CMD ["python3", "/model/run.sh"]
